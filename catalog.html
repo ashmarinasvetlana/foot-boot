@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="description" content=""/>
+	<title></title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	
+	
+</head>
+<body>
+<header class="header">
+    <div class="container header-container">
+    <div class="header-block">
+        <img src="./assets/img/common/logo.png" class="logo header-logo" alt="">
+        <nav class="header-nav">
+            <img class="burger" src="./assets/img/icons/burger.svg" alt="">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link menu">Каталог</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link menu">Доставка</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link menu">Оплата</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link menu">Гарантия</a>
+              </li>
+              </ul>
+          </nav>
+          <nav class="mobile-menu">
+            <button class="mobile-menu_close">&times;</button>
+            <ul class="mobile-menu__list">
+                <li class="header-nav__item mobile-menu__item">
+                    <a href="#" class="header-nav__link menu mobile-menu__link">Каталог</a>
+                  </li>
+                  <li class="header-nav__item mobile-menu__item">
+                    <a href="#" class="header-nav__link menu mobile-menu__link">Доставка</a>
+                  </li>
+                  <li class="header-nav__item mobile-menu__item">
+                    <a href="#" class="header-nav__link menu mobile-menu__link">Оплата</a>
+                  </li>
+                  <li class="header-nav__item mobile-menu__item">
+                    <a href="#" class="header-nav__link menu mobile-menu__link">Гарантия</a>
+                  </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-block header-info">
+        <div class="header-info__item">
+    
+    <a href="tel:+79013846797" class="header-info__link link">тел. +79013846797</a>
+        </div>
+        <div class="header-info__item">
+            <a href="" class="header-info__link"><img src="./assets/img/icons/cart.svg" alt=""></a>
+        </div>
+    </div>
+    </div>
+    </header>
+    <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__list-item breadcrumbs__link"><a href="">главная</a></li>
+            <li class="breadcrumbs__list-item"><span>Каталог</span></li>
+          </ul>
+        </div>
+       
+    </div>
+
+<div class="catalog">
+  <div class="container">
+<div class="catalog__filter">
+  <div class="catalog__filter-items">
+    <h3 class="catalog-filters__title">Параметры</h3>
+    <button></button>
+    <button></button>
+    <button></button>
+  </div>
+  <div class="catalog__filter-btn">
+    <form class="catalog__filter-select--form" action="">
+      <select name="" id="" class="catalog__filter-select">
+        <option value="">По полуярности</option>
+        <option value="">По цене</option>
+        <option value="">По новизне</option>
+      </select>
+
+    </form>
+  
+    <button class="catalog__filter-btngrid">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.5">
+        <path d="M7 1.29851C7 1.13358 6.86642 1 6.70149 1H1.29851C1.13358 1 1 1.13358 1 1.29851V6.70149C1 6.86642 1.13358 7 1.29851 7H6.70149C6.86642 7 7 6.86642 7 6.70149V1.29851ZM6.40299 6.40299H1.59701V1.59701H6.40299V6.40299Z" fill="black"/>
+        <path d="M7 9.29851C7 9.13358 6.86642 9 6.70149 9H1.29851C1.13358 9 1 9.13358 1 9.29851V14.7015C1 14.8664 1.13358 15 1.29851 15H6.70149C6.86642 15 7 14.8664 7 14.7015V9.29851ZM6.40299 14.403H1.59701V9.59701H6.40299V14.403Z" fill="black"/>
+        <path d="M7 17.2985C7 17.1336 6.86642 17 6.70149 17H1.29851C1.13358 17 1 17.1336 1 17.2985V22.7015C1 22.8664 1.13358 23 1.29851 23H6.70149C6.86642 23 7 22.8664 7 22.7015V17.2985ZM6.40299 22.403H1.59701V17.597H6.40299V22.403Z" fill="black"/>
+        <path d="M23 1.29851C23 1.13358 22.8664 1 22.7015 1H17.2985C17.1336 1 17 1.13358 17 1.29851V6.70149C17 6.86642 17.1336 7 17.2985 7H22.7015C22.8664 7 23 6.86642 23 6.70149V1.29851ZM22.403 6.40299H17.597V1.59701H22.403V6.40299Z" fill="black"/>
+        <path d="M23 9.29851C23 9.13358 22.8664 9 22.7015 9H17.2985C17.1336 9 17 9.13358 17 9.29851V14.7015C17 14.8664 17.1336 15 17.2985 15H22.7015C22.8664 15 23 14.8664 23 14.7015V9.29851ZM22.403 14.403H17.597V9.59701H22.403V14.403Z" fill="black"/>
+        <path d="M23 17.2985C23 17.1336 22.8664 17 22.7015 17H17.2985C17.1336 17 17 17.1336 17 17.2985V22.7015C17 22.8664 17.1336 23 17.2985 23H22.7015C22.8664 23 23 22.8664 23 22.7015V17.2985ZM22.403 22.403H17.597V17.597H22.403V22.403Z" fill="black"/>
+        <path d="M15 1.29851C15 1.13358 14.8664 1 14.7015 1H9.29851C9.13358 1 9 1.13358 9 1.29851V6.70149C9 6.86642 9.13358 7 9.29851 7H14.7015C14.8664 7 15 6.86642 15 6.70149V1.29851ZM14.403 6.40299H9.59701V1.59701H14.403V6.40299Z" fill="black"/>
+        <path d="M15 9.29851C15 9.13358 14.8664 9 14.7015 9H9.29851C9.13358 9 9 9.13358 9 9.29851V14.7015C9 14.8664 9.13358 15 9.29851 15H14.7015C14.8664 15 15 14.8664 15 14.7015V9.29851ZM14.403 14.403H9.59701V9.59701H14.403V14.403Z" fill="black"/>
+        <path d="M15 17.2985C15 17.1336 14.8664 17 14.7015 17H9.29851C9.13358 17 9 17.1336 9 17.2985V22.7015C9 22.8664 9.13358 23 9.29851 23H14.7015C14.8664 23 15 22.8664 15 22.7015V17.2985ZM14.403 22.403H9.59701V17.597H14.403V22.403Z" fill="black"/>
+        </g>
+        </svg>
+        
+    </button>
+    <button class="catalog__filter-btnline">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.8117 1.26172C10.8117 0.985469 10.588 0.761719 10.3117 0.761719H1.26172C0.985469 0.761719 0.761719 0.985469 0.761719 1.26172V10.3117C0.761719 10.588 0.985469 10.8117 1.26172 10.8117H10.3117C10.588 10.8117 10.8117 10.588 10.8117 10.3117V1.26172ZM9.81172 9.81172H1.76172V1.76172H9.81172V9.81172Z" fill="#808080"/>
+        <path d="M23.2609 1.26172C23.2609 0.985469 23.0372 0.761719 22.7609 0.761719H13.7109C13.4347 0.761719 13.2109 0.985469 13.2109 1.26172V10.3117C13.2109 10.588 13.4347 10.8117 13.7109 10.8117H22.7609C23.0372 10.8117 23.2609 10.588 23.2609 10.3117V1.26172ZM22.2609 9.81172H14.2109V1.76172H22.2609V9.81172Z" fill="#808080"/>
+        <path d="M10.8117 13.7109C10.8117 13.4347 10.588 13.2109 10.3117 13.2109H1.26172C0.985469 13.2109 0.761719 13.4347 0.761719 13.7109V22.7609C0.761719 23.0372 0.985469 23.2609 1.26172 23.2609H10.3117C10.588 23.2609 10.8117 23.0372 10.8117 22.7609V13.7109ZM9.81172 22.2109H1.76172V14.2109H9.81172V22.2109Z" fill="#808080"/>
+        <path d="M23.26 13.71C23.26 13.4337 23.0362 13.21 22.76 13.21H13.71C13.4337 13.21 13.21 13.4337 13.21 13.71V22.76C13.21 23.0362 13.4337 23.26 13.71 23.26H22.76C23.0362 23.26 23.26 23.0362 23.26 22.76V13.71ZM22.26 22.21H14.21V14.21H22.26V22.21Z" fill="#808080"/>
+        </svg>
+    </button>
+  </div>
+</div>
+<div class="catalog-wrap">
+  <div class="catalog-aside">
+    <form action="" class="aside-filter__form">
+      <ul class="aside-filter__list">
+        <li class="aside-filter__item aside-filter__item-drop parameter-active active">Тип</li>
+        <ul class="aside-filter__list--drop">
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Ботинки</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Кроссовки</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Кеды</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href=""></a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href=""></a></li>
+        </ul>
+        <li class="aside-filter__item aside-filter__item-drop parameter-active active">Размер</li>
+        <ul class="aside-filter__list--drop">
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">25</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">26</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">27</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">28</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">29</a></li>
+        </ul>
+        <li class="aside-filter__item aside-filter__item-drop parameter-active active">Цвет</li>
+        <ul class="aside-filter__list--drop">
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Черный</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Желтый</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Розовый</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Синий</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Оранжевый</a></li>
+        </ul>
+        <li class="aside-filter__item aside-filter__item-drop parameter-active active">Сезон</li>
+        <ul class="aside-filter__list--drop">
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Зима</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Весна</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Лето</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Осень</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Демисезон</a></li>
+        </ul>
+        <li class="aside-filter__item aside-filter__item-drop parameter-active active">Пол</li>
+        <ul class="aside-filter__list--drop">
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Девочки</a></li>
+          <li class="aside-filter__item aside-filter__list--drop__item"><a href="">Мальчики</a></li>
+        </ul>
+        <!--<li class="aside-filter__item"></li>
+        <li class="aside-filter__item"></li>
+        <li class="aside-filter__item"></li>
+        <li class="aside-filter__item"></li>-->
+      </ul>
+    </form>
+  </div>
+  <div class="catalog-list">
+    <div class="product-card">
+      
+        <div class="product-card__body product-body">
+          <span class="product-card__status">new</span>
+      <button class="product-card__button-like product-card__button--heart"><img src="./assets/img/icons/heart.svg" alt=""></button>
+      <button class="product-card__button-like product-card__button--red hide"><img src="./assets/img/icons/heart-red.svg" alt=""></button>
+      <div class="product-card__colors">
+        <span class="product-card__color"></span>
+        <span class="product-card__color"></span>
+      </div>
+      <a href="" class="product-card__link">
+          <img class="product-card__img" src="./assets/img/common/products/dandy y 1.png">
+          <p class="product-card__text product-card__name">Ботинки</p>
+          <p class="product-card__text product-card__price">2999<span class="product-card__currency">₽</span></p>
+        </a>
+          <a href="#" class="product-button product-card__button"><img src="./assets/img/icons/cart-btn.svg" alt="" class="product-button__cart-icon"></a>
+      
+        </div>
+      
+      
+      </div>
+      <div class="product-card">
+      
+        <div class="product-card__body product-body">
+          <span class="product-card__status">new</span>
+      <button class="product-card__button-like product-card__button--heart"><img src="./assets/img/icons/heart.svg" alt=""></button>
+      <button class="product-card__button-like product-card__button--red hide"><img src="./assets/img/icons/heart-red.svg" alt=""></button>
+      <div class="product-card__colors">
+        <span class="product-card__color"></span>
+        <span class="product-card__color"></span>
+      </div>
+      <a href="" class="product-card__link">
+          <img class="product-card__img" src="./assets/img/common/products/dandy b 1.png">
+          <p class="product-card__text product-card__name">Ботнки</p>
+          <p class="product-card__text product-card__price">2999<span class="product-card__currency">₽</span></p>
+        </a>
+          <a href="#" class="product-button product-card__button"><img src="./assets/img/icons/cart-btn.svg" alt="" class="product-button__cart-icon"></a>
+      
+        </div>
+      
+      
+      </div>
+      <div class="product-card">
+      
+        <div class="product-card__body product-body">
+          <span class="product-card__status">new</span>
+      <button class="product-card__button-like product-card__button--heart"><img src="./assets/img/icons/heart.svg" alt=""></button>
+      <button class="product-card__button-like product-card__button--red hide"><img src="./assets/img/icons/heart-red.svg" alt=""></button>
+      <div class="product-card__colors">
+        <span class="product-card__color"></span>
+        <span class="product-card__color"></span>
+      </div>
+      <a href="" class="product-card__link">
+          <img class="product-card__img" src="./assets/img/common/products/dandy y 1.png">
+          <p class="product-card__text product-card__name">Ботнки</p>
+          <p class="product-card__text product-card__price">2999<span class="product-card__currency">₽</span></p>
+        </a>
+          <a href="#" class="product-button product-card__button"><img src="./assets/img/icons/cart-btn.svg" alt="" class="product-button__cart-icon"></a>
+      
+        </div>
+      
+      
+      </div>
+      <div class="product-card">
+      
+        <div class="product-card__body product-body">
+          <span class="product-card__status">new</span>
+      <button class="product-card__button-like product-card__button--heart"><img src="./assets/img/icons/heart.svg" alt=""></button>
+      <button class="product-card__button-like product-card__button--red hide"><img src="./assets/img/icons/heart-red.svg" alt=""></button>
+      <div class="product-card__colors">
+        <span class="product-card__color"></span>
+        <span class="product-card__color"></span>
+      </div>
+      <a href="" class="product-card__link">
+          <img class="product-card__img" src="./assets/img/common/products/toots b 1.png">
+          <p class="product-card__text product-card__name">Ботнки</p>
+          <p class="product-card__text product-card__price">2999<span class="product-card__currency">₽</span></p>
+        </a>
+          <a href="#" class="product-button product-card__button"><img src="./assets/img/icons/cart-btn.svg" alt="" class="product-button__cart-icon"></a>
+      
+        </div>
+      
+      
+      </div>
+      <div class="product-card">
+      
+        <div class="product-card__body product-body">
+          <span class="product-card__status">new</span>
+      <button class="product-card__button-like product-card__button--heart"><img src="./assets/img/icons/heart.svg" alt=""></button>
+      <button class="product-card__button-like product-card__button--red hide"><img src="./assets/img/icons/heart-red.svg" alt=""></button>
+      <div class="product-card__colors">
+        <span class="product-card__color"></span>
+        <span class="product-card__color"></span>
+      </div>
+      <a href="" class="product-card__link">
+          <img class="product-card__img" src="./assets/img/common/products/toots b 2.png">
+          <p class="product-card__text product-card__name">Ботнки</p>
+          <p class="product-card__text product-card__price">2999<span class="product-card__currency">₽</span></p>
+        </a>
+          <a href="#" class="product-button product-card__button"><img src="./assets/img/icons/cart-btn.svg" alt="" class="product-button__cart-icon"></a>
+      
+        </div>
+      
+      
+      </div>
+      <div class="product-card">
+      
+        <div class="product-card__body product-body">
+          <span class="product-card__status">new</span>
+      <button class="product-card__button-like product-card__button--heart"><img src="./assets/img/icons/heart.svg" alt=""></button>
+      <button class="product-card__button-like product-card__button--red hide"><img src="./assets/img/icons/heart-red.svg" alt=""></button>
+      <div class="product-card__colors">
+        <span class="product-card__color"></span>
+        <span class="product-card__color"></span>
+      </div>
+      <a href="" class="product-card__link">
+          <img class="product-card__img" src="./assets/img/common/products/toots c 2.png">
+          <p class="product-card__text product-card__name">Ботнки</p>
+          <p class="product-card__text product-card__price">2999<span class="product-card__currency">₽</span></p>
+        </a>
+          <a href="#" class="product-button product-card__button"><img src="./assets/img/icons/cart-btn.svg" alt="" class="product-button__cart-icon"></a>
+      
+        </div>
+      
+      
+      </div>
+      <div class="product-card">
+      
+        <div class="product-card__body product-body">
+          <span class="product-card__status">new</span>
+      <button class="product-card__button-like product-card__button--heart"><img src="./assets/img/icons/heart.svg" alt=""></button>
+      <button class="product-card__button-like product-card__button--red hide"><img src="./assets/img/icons/heart-red.svg" alt=""></button>
+      <div class="product-card__colors">
+        <span class="product-card__color"></span>
+        <span class="product-card__color"></span>
+      </div>
+      <a href="" class="product-card__link">
+          <img class="product-card__img" src="./assets/img/common/products/toots r 1.png">
+          <p class="product-card__text product-card__name">Ботнки</p>
+          <p class="product-card__text product-card__price">2999<span class="product-card__currency">₽</span></p>
+        </a>
+          <a href="#" class="product-button product-card__button"><img src="./assets/img/icons/cart-btn.svg" alt="" class="product-button__cart-icon"></a>
+      
+        </div>
+      
+      
+      </div>
+      <div class="product-card">
+      
+        <div class="product-card__body product-body">
+          <span class="product-card__status">new</span>
+      <button class="product-card__button-like product-card__button--heart"><img src="./assets/img/icons/heart.svg" alt=""></button>
+      <button class="product-card__button-like product-card__button--red hide"><img src="./assets/img/icons/heart-red.svg" alt=""></button>
+      <div class="product-card__colors">
+        <span class="product-card__color"></span>
+        <span class="product-card__color"></span>
+      </div>
+      <a href="" class="product-card__link">
+          <img class="product-card__img" src="./assets/img/common/products/toots p 2.png">
+          <p class="product-card__text product-card__name">Ботинки</p>
+          <p class="product-card__text product-card__price">2999<span class="product-card__currency">₽</span></p>
+        </a>
+          <a href="#" class="product-button product-card__button"><img src="./assets/img/icons/cart-btn.svg" alt="" class="product-button__cart-icon"></a>
+      
+        </div>
+      
+      
+      </div>
+      <div class="product-card">
+      
+        <div class="product-card__body product-body">
+          <span class="product-card__status">new</span>
+      <button class="product-card__button-like product-card__button--heart"><img src="./assets/img/icons/heart.svg" alt=""></button>
+      <button class="product-card__button-like product-card__button--red hide"><img src="./assets/img/icons/heart-red.svg" alt=""></button>
+      <div class="product-card__colors">
+        <span class="product-card__color"></span>
+        <span class="product-card__color"></span>
+      </div>
+      <a href="" class="product-card__link">
+          <img class="product-card__img" src="./assets/img/common/products/dandy y 1.png">
+          <p class="product-card__text product-card__name">Ботнки</p>
+          <p class="product-card__text product-card__price">2999<span class="product-card__currency">₽</span></p>
+        </a>
+          <a href="#" class="product-button product-card__button"><img src="./assets/img/icons/cart-btn.svg" alt="" class="product-button__cart-icon"></a>
+      
+        </div>
+      
+      
+      </div>
+      <div class="product-card">
+      
+        <div class="product-card__body product-body">
+          <span class="product-card__status">new</span>
+      <button class="product-card__button-like product-card__button--heart"><img src="./assets/img/icons/heart.svg" alt=""></button>
+      <button class="product-card__button-like product-card__button--red hide"><img src="./assets/img/icons/heart-red.svg" alt=""></button>
+      <div class="product-card__colors">
+        <span class="product-card__color"></span>
+        <span class="product-card__color"></span>
+      </div>
+      <a href="" class="product-card__link">
+          <img class="product-card__img" src="./assets/img/common/products/dandy y 1.png">
+          <p class="product-card__text product-card__name">Ботнки</p>
+          <p class="product-card__text product-card__price">2999<span class="product-card__currency">₽</span></p>
+        </a>
+          <a href="#" class="product-button product-card__button"><img src="./assets/img/icons/cart-btn.svg" alt="" class="product-button__cart-icon"></a>
+      
+        </div>
+      
+      
+      </div>
+      <div class="product-card">
+      
+        <div class="product-card__body product-body">
+          <span class="product-card__status">new</span>
+      <button class="product-card__button-like product-card__button--heart"><img src="./assets/img/icons/heart.svg" alt=""></button>
+      <button class="product-card__button-like product-card__button--red hide"><img src="./assets/img/icons/heart-red.svg" alt=""></button>
+      <div class="product-card__colors">
+        <span class="product-card__color"></span>
+        <span class="product-card__color"></span>
+      </div>
+      <a href="" class="product-card__link">
+          <img class="product-card__img" src="./assets/img/common/products/dandy y 1.png">
+          <p class="product-card__text product-card__name">Ботнки</p>
+          <p class="product-card__text product-card__price">2999<span class="product-card__currency">₽</span></p>
+        </a>
+          <a href="#" class="product-button product-card__button"><img src="./assets/img/icons/cart-btn.svg" alt="" class="product-button__cart-icon"></a>
+      
+        </div>
+      
+      
+      </div>
+      <div class="product-card">
+      
+        <div class="product-card__body product-body">
+          <span class="product-card__status">new</span>
+      <button class="product-card__button-like product-card__button--heart"><img src="./assets/img/icons/heart.svg" alt=""></button>
+      <button class="product-card__button-like product-card__button--red hide"><img src="./assets/img/icons/heart-red.svg" alt=""></button>
+      <div class="product-card__colors">
+        <span class="product-card__color"></span>
+        <span class="product-card__color"></span>
+      </div>
+      <a href="" class="product-card__link">
+          <img class="product-card__img" src="./assets/img/common/products/dandy y 1.png">
+          <p class="product-card__text product-card__name">Ботнки</p>
+          <p class="product-card__text product-card__price">2999<span class="product-card__currency">₽</span></p>
+        </a>
+          <a href="#" class="product-button product-card__button"><img src="./assets/img/icons/cart-btn.svg" alt="" class="product-button__cart-icon"></a>
+      
+        </div>
+      
+      
+      </div>
+        <div class="pagination">
+          <ul class="pagination-list">
+            <li class="pagination-list__item active"><a href="#">1</a></li>
+            <li class="pagination-list__item"><a href="#">2</a></li>
+            <li class="pagination-list__item"><a href="#">3</a></li>
+            <li class="pagination-list__item"><a href="#">4</a></li>
+            <li class="pagination-list__item"><a href="#">5</a></li>
+            <li class="pagination-list__item pagination-list__item--dots"><span>...</span></li>
+            <li class="pagination-list__item"><a href="#">10</a></li>
+          </ul>
+        </div>
+  </div>
+  
+</div>
+
+
+  </div>
+</div>
+    <footer class="footer">
+        <div class="container footer-container">
+        <div class="footer-block">
+            <img src="./assets/img/common/fOOT & boot.svg" alt="" class="logo footer-logo">
+            <div class="footer-social">
+                <a href="" class="footer-social__link"><img src="./assets/img/icons/inst.svg" alt="" class="footer-social__icon"></a>
+                <a href="" class="footer-social__link"><img src="./assets/img/icons/vk.svg" alt="" class="footer-social__icon"></a>
+                <a href="" class="footer-social__link"><img src="./assets/img/icons/fb.svg" alt="" class="footer-social__icon"></a>
+            </div>
+        </div>
+        <div class="footer-block">
+            <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link menu">Девочкам</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link menu">Мальчикам</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link menu">Аксессуары</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link menu">Каталог</a>
+                  </li>
+                  </ul>
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link menu">Доставка и оплата</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link menu">Обмен и возврат</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link menu">Гарантия качества</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="#" class="footer-nav__link menu">Как купить</a>
+                    </li>
+                    </ul>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                          <a href="#" class="footer-nav__link menu">О нас</a>
+                        </li>
+                        <li class="footer-nav__item">
+                          <a href="#" class="footer-nav__link menu">Партнеры</a>
+                        </li>
+                        <li class="footer-nav__item">
+                          <a href="#" class="footer-nav__link menu">Акции</a>
+                        </li>
+                    
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                              <a href="#" class="footer-nav__link menu">Контакты</a>
+                            </li>
+                            <li class="footer-nav__item">
+                              <a href="#" class="footer-nav__link menu">Сертификаты</a>
+                            </li>
+                            <li class="footer-nav__item">
+                              <a href="#" class="footer-nav__link menu">Политика</a>
+                            </li>
+                            
+                            </ul>
+              </nav>
+              <div class="footer-info ">
+                  <img src="./assets/img/icons/visa.svg" alt="" class="footer-pay__icon">
+                  <img src="./assets/img/icons/mc.svg" alt="" class="footer-pay__icon">
+                  <img src="./assets/img/icons/mir.svg" alt="" class="footer-pay__icon">
+              </div>
+        </div>
+        <div class="footer-block footer-news">
+            <h3 class="undertitle">Подпишитесь на  рассылку 
+                об акциях и предложениях</h3>
+                <form action="" method="POST" class="footer-form news-form">
+                    <input class="footer-form__input" type="email" name="news-email" id="" placeholder="E-mail">
+                    <button type="submit" class="button news-button">Подписаться</button>
+                </form>
+        </div>
+        </div>
+        </footer>
+        
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="js/modules/aos.js"></script>
+        <script src="js/modules/accordion.js"></script>
+
+        </body>
+        </html>

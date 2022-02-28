@@ -1,0 +1,26 @@
+.return
+    min-height: 150vh
+    padding-top: 60px
+    padding-bottom: 240px
+    background: url(../img/return/return-bg.jpg) no-repeat center top -38px
+    background-size: cover
+    &-list
+        margin-bottom: 60px
+        max-width: 586px
+.bottom
+    &-block
+        +flex
+        align-items: flex-end
+    &-text
+        max-width: 600px
+    &-icon
+        margin-left: 10px
+@media screen and ( max-width: 990px )
+    .bottom
+        &-link
+            margin-top: 30px
+        &-block
+            flex-direction: column
+            justify-content: flex-start
+            align-items: flex-start
+    

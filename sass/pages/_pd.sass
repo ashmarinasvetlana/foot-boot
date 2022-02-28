@@ -1,0 +1,38 @@
+.pay
+    &-block
+        margin-bottom: 80px
+    &-list
+        display: flex
+        justify-content: space-between
+        list-style-position: inside
+        max-width: 540px
+        margin-bottom: 5px
+        &__item
+            max-width: 50%
+@media screen and ( max-width: 990px)
+    .pay
+        &-block
+            margin-bottom: 50px
+            .block_50
+                width: 80%
+    .delivery
+        &-list
+            max-width: 100%
+    .list__item
+            font-size: 16px
+@media screen and ( max-width: 768px)
+    .pay
+        &-block
+            margin-bottom: 50px
+            .block_50
+                width: 100%
+    .delivery
+        &-list
+            max-width: 100%
+@media screen and ( max-width: 486px)
+    .pay
+        &-list
+            flex-direction: column
+            &__item
+                max-width: 100%
+    

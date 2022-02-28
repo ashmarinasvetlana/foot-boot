@@ -1,0 +1,38 @@
+.about
+    +flex
+    background: url(../img/about/about-bg.svg) no-repeat center right 60px
+    background-size: contain
+    min-height: 440px
+    &-text
+        max-width: 542px
+        margin-bottom: 25px
+    &-title
+        font-size: 60px
+        font-family: 'Pribambas', sans-serif
+        margin-bottom: 35px
+    &-img
+        margin-top: -90px
+@media screen and ( max-width: 991px)
+    .about
+        background: url(../img/about/about-bg.svg) no-repeat center right 0px
+        background-size: contain
+        min-height: 580px
+        &-img
+            display: none
+        &-desc
+            width: 100%
+        &-text
+            max-width: 70%
+@media screen and ( max-width: 640px)
+    .about
+        min-height: 500px
+        &-text
+            max-width: 100%
+@media screen and ( max-width: 486px)
+    .about
+        &-text
+            margin-bottom: 10px
+        &-title
+            font-size: 50px
+            margin-bottom: 20px
+    

@@ -1,0 +1,83 @@
+.footer
+    padding-top: 70px
+    padding-bottom: 70px
+    min-height: 330px
+    background-color: $nav
+    margin-top: 200px
+    &-container
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+    &-block
+        margin-right: 35px
+    &-logo
+        margin-bottom: 30px
+    &-social
+        display: flex
+        align-items: flex-end
+        &__link
+            display: block
+            margin-right: 15px
+            opacity: 0.8
+            &:last-child
+                margin-right: 0px
+            &:hover
+                opacity: 1
+    &-nav
+        display: flex
+        justify-content: space-between
+        &__list
+            margin-right: 45px
+        &__item
+            list-style: none
+            margin-bottom: 20px
+    &-news
+        max-width: 240px
+    &-info
+        display: flex
+        align-items: center
+        margin-top: 45px
+    &-pay
+        &__icon
+          margin-right: 15px
+    &-form
+        &__input
+            background-color: transparent
+            width: 240px
+            margin-top: 30px
+            margin-bottom: 30px
+            border: none
+            padding-bottom: 10px
+            padding-top: 10px
+            border-bottom: 0.3px solid #DADADA
+            &:focus
+                border-bottom: 0.3px solid $active
+                
+@media screen and ( max-width:  990px)
+    .footer
+        margin-top: 110px
+        &-info
+            margin-bottom: 30px
+            margin-top: 30px
+        &-social
+            margin-bottom: 40px
+        &-nav
+            flex-direction: column
+@media screen and ( max-width:  640px)
+    .footer
+        margin-top: 70px
+        padding-top: 50px
+        padding-bottom: 50px
+        &-logo
+            margin-bottom: 20px
+        &-social
+            margin-bottom: 40px
+        &-news
+            display: none
+@media screen and ( max-width:  486px)
+    .footer
+        margin-top: 40px
+        padding-top: 40px
+        padding-bottom: 30px
+            

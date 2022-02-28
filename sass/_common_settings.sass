@@ -1,0 +1,222 @@
+
+html
+    +reg
+img
+    max-width: 100%
+a
+    text-decoration: none
+    color: $text-color
+    transition-duration: 0.6s
+    &:hover
+        color: $active-dark
+        transition-duration: 0.6s
+ul, li, p, h1, h2, h3, h4, ol
+    margin: 0
+    padding: 0
+input, button
+    border: none
+    outline: none
+    background: none
+    cursor: pointer
+.active
+    color: $active
+.title
+    &_40
+        font-family: 'Pribambas', sans-serif
+        font-size: 40px
+        margin-bottom: 25px
+        max-width: 200px
+    &_20
+        font-weight: 500
+        font-size: 20px
+    &_18
+        font-size: 18px
+        font-weight: 500
+    &_16
+        font-size: 16px
+        font-weight: 600
+.section
+    margin-bottom: 210px
+    &__title
+        font-family: 'Pribambas', sans-serif;
+        font-size: 65px
+        text-transform: uppercase
+        letter-spacing: 0.03em
+        color: $text-color
+        margin-bottom: 70px
+    &-heading
+        display: flex
+        align-items: center
+    &-similar
+        position: relative
+        .swiper-button-prev
+            left: 50px
+            outline: none
+            top: 61%
+        .swiper-button-next
+            right: 60px
+            outline: none
+            top: 61%
+        &__link
+            +reg
+            display: block
+            margin-left: 15px
+.menu
+    font-family: 'Montserrat', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.3px
+    text-transform: uppercase
+.link
+    font-family: 'Montserrat', sans-serif
+.undertitle
+    font-family: 'Montserrat', sans-serif
+    font-weight: 600
+    font-size: 16px
+.button
+    border: none
+    outline: none
+    cursor: pointer
+    background-color: $active
+    color: $text-color
+    width: 180px
+    height: 40px
+    border-radius: 5px
+    transition-duration: 0.5s
+    &:hover
+        background-color: $active-dark
+        color: $light
+.center
+    text-align: center
+.show
+    display: block
+.hide
+    display: none
+.fade 
+  animation-name: fade
+  animation-duration: 1.5s
+
+.list
+    list-style-position: outside
+    max-width: 500px
+    &__item
+        margin-bottom: 25px
+        font-size: 24px
+        line-height: 145%
+        &::marker
+            margin-right: 20px
+            font-weight: 500
+            color: $active
+.breadcrumbs
+    margin-bottom: 60px
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.03em
+    text-transform: uppercase
+    &__list
+        &-item
+            display: inline-block
+            position: relative
+            list-style-type: none
+            margin-right: 5px
+            padding-right: 22px
+            &::after
+                content: ''
+                position: absolute
+                right: 0
+                background: url('../img/common/breadcrumbs-arrow.svg') no-repeat center
+                width: 12px
+                height: 12px
+                top: 1px
+            &:last-child
+                &::after
+                    display: none
+.block
+    &_100
+        +flex
+        width: 100%
+    &_50
+        width: 50%
+    &_active
+        background-color: $active
+
+.text
+    font-family: 'Montserrat', sans-serif
+    font-size: 16px
+    line-height: 155%
+.margin-reset
+    margin-top: -60px
+    margin-bottom: -240px
+
+.cart
+    position: relative
+    &__count
+        position: absolute
+        width: 21px
+        height: 21px
+        font-size: 10px
+        font-weight: 600
+        line-height: 22px
+        background-color: $active
+        text-align: center
+        border-radius: 10px
+        top: 7px
+        left: 10px
+        &:hover
+            color: $light
+.bottom
+    &-links
+        display: flex
+        justify-content: space-between
+        margin-top: 15px
+
+//Модальные окна
+
+.popup
+    z-index: 10
+    position: fixed
+    display: none
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background-color:  rgba(40, 37, 37, 0.8)
+    &-content
+        position: fixed
+        max-width: 590px
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)  
+        padding:  5px
+    &-close
+        cursor: pointer
+        +reg 
+        color: $light
+        border: none
+        background-color: transparent
+        font-weight: 300
+        font-size: 32px
+        outline: none
+        font-size: 52px
+        outline: none
+        position: absolute
+        top: -5px
+        right: -50px
+        &:active
+            outline: none
+
+@media screen and ( max-width: 640px)
+    .breadcrumbs
+        margin-bottom: 40px
+
+@media screen and ( max-width: 486px)
+    .margin-reset
+        margin-top: -40px
+    .button
+        width: 100%
+        height: 50px
+    

@@ -1,0 +1,175 @@
+.catalog
+    &__filter
+        +flex
+        margin-bottom: 40px
+        &-items
+            display: flex
+            align-items: center
+        &-btn
+            display: flex
+            align-items: center
+        &-select
+            width: 180px
+            height: 40px
+            border: 0.5px solid #F2F2F2
+            border-radius: 5px
+            padding: 5px
+            cursor: pointer
+            outline: none
+            &--form
+                margin-right: 40px
+    &-wrap
+        display: flex
+    &-aside
+        min-width: 290px
+    &-list
+    +flex
+    flex-wrap: wrap
+    .product-card
+        margin-bottom: 30px
+.pagination
+    width: 100%
+    margin-top: 60px
+    &-list
+        display: flex
+        justify-content: center
+        &__item
+            padding: 9px 15px
+            font-size: 18px
+            border: 2px solid #F9F9F9
+            margin-right: 10px
+            color: $text-color
+            list-style-type: none
+            &.active
+                border: 2px solid $active
+                a
+                    color: $active
+            a
+                display: block
+
+.aside
+    &-filter
+        &__item
+            list-style-type: none
+            &-drop
+                margin-bottom: 15px
+                margin-top: 35px
+                position: relative
+                cursor: pointer
+                &.parameter-active
+                    outline: unset
+                    background: unset
+                    &:after
+                        transform: rotate(180deg)
+                        transition-duration: 0.7s
+                    &+.aside-filter__list--drop
+                        display: block
+
+                &:first-child
+                    margin-top: 0px
+                &:after
+                    content: ''
+                    position: absolute
+                    left: 30%
+                    background: url('../img/catalog/drop-arrow.svg') no-repeat center
+                    width: 10px
+                    height: 10px
+                    top: 1px
+                    transition-duration: 0.7s
+        &__list
+            &--drop
+                padding-left: 20px
+                display: none
+                transition-duration: 0.7s
+                &__item
+                    margin-bottom: 10px
+
+@media (max-width: 1240px)
+    .catalog
+        &-aside
+            min-width: 200px
+        &-list
+            .product
+                &-card
+                    margin-right: 5px
+                    margin-bottom: 15px
+                    &__body
+                        width: 230px
+    .aside-filter__item-drop:after
+        top: 5px
+        left: 50%
+    .product
+        &-card
+            &__img
+                margin-bottom: 10px
+@media screen and ( max-width:  768px)
+    .catalog
+        &-wrap
+            flex-direction: column
+        &-aside
+            margin-bottom: 60px
+            width: 100%
+            min-width: 100%
+        &-list
+            justify-content: center
+            .product-card
+                margin-right: 30px
+                margin-bottom: 30px
+                &:nth-child(2n)
+                    margin-right: 0px
+
+    .aside-filter__item-drop:after
+        top: 10px
+        right: 0px
+        left: unset
+    .aside-filter__item-drop
+        display: flex
+        align-items: center
+        margin-bottom: 0px
+        margin-top: 20px
+        position: relative
+        cursor: pointer
+        height: 40px
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.1)
+    .aside-filter__list--drop
+        padding-top: 20px
+
+@media screen and ( max-width:  640px)
+    .catalog
+
+        &-aside
+            margin-bottom: 40px
+        &-list
+            justify-content: space-between
+            .product-card
+                margin-right: 15px
+                margin-bottom: 15px
+                &:nth-child(2n)
+                    margin-right: 0px
+                &__body
+                    width: 210px
+                &__price
+                    font-size: 16px
+    .product-card__status
+        width: 40px
+        height: 20px
+        padding: 2px
+        font-size: 10px
+@media screen and ( max-width: 486px )
+    .catalog
+        &__filter
+            display: flex
+            justify-content: space-between
+            margin-bottom: 40px
+            flex-wrap: wrap
+        &-filters
+            &__title
+                margin-bottom: 20px
+        &-list
+            justify-content: center
+            .product-card
+                margin-right: 0px
+    .pagination-list
+        flex-wrap: wrap
+        &__item
+            margin-bottom: 10px

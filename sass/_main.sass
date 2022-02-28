@@ -1,0 +1,301 @@
+.slider
+    &-img
+        width: 100%
+    &-nav
+        margin-top: 40px
+        +flex
+        align-items: center
+    &-controls
+        display: flex
+    &-pagination
+        margin-right: 50px
+    &-arrows
+        display: flex
+        align-items: center
+    &-arrow
+        cursor: pointer
+        margin-right: 40px
+        opacity: 0.7
+        outline: none
+        transition-duration: 0.7s
+        &:hover
+            opacity: 1
+    &-number
+        margin-right: 40px
+        font-size: 14px
+        color: #C4C4C4
+.swiper-pagination-bullet
+    outline: none
+    width: 47px
+    height: 34px
+    border-radius: 5px
+    text-align: center
+    line-height: 32px
+    font-size: 15px
+    color: #C4C4C4
+    opacity: 1
+    background: transparent
+    margin-right: 10px
+.swiper-pagination-bullet-active 
+    color: #fff
+    background: $active
+    color: $text-color
+    font-weight: 600
+.swiper-pagination
+    position: relative
+    margin-right: 40px
+.top
+    &-container
+        margin-bottom: 180px
+.star
+    &-bg
+        position: absolute
+        left: 40%
+        margin-top: -80px
+        z-index: -1
+        &__img
+            width: 400px
+        &_bottom
+            left: 35%
+            margin-top: -230px
+//Категории
+.categories
+    &-wrap
+        +flex
+        align-items: flex-end
+        flex-wrap: wrap
+    &-block
+        min-height: 100%
+        +flex
+        flex-direction: column
+        &_small
+            display: flex
+            flex-direction: column
+            &-item
+                margin-bottom: 25px
+        &_big
+            margin-right: 15px
+           
+.category
+    &-info
+        +flex
+        align-items: center
+        margin-top: 25px
+        transition-duration: 0.5s
+        &__name
+            font-size: 20px
+            font-weight: 500
+    &-block
+        &__img
+            &_big
+                max-height: 524px
+            &_small
+                max-height: 220px
+                &__item
+                    max-width: 350px
+    &-link
+        display: block
+        margin-right: 8px
+        color: #5C5A5B
+        &:hover
+            &+.category-info
+                color: $active
+.section
+    &-popular
+        position: relative
+        .swiper-button-prev
+            display: none
+            left: 30px
+            outline: none
+            top: 61%
+        .swiper-button-next
+            display: none
+            right: 30px
+            outline: none
+            top: 61%
+        &__link
+            +reg
+            display: block
+            margin-left: 15px
+    &-pay
+        background: url(../img/index/star-pay.svg) no-repeat center left 250px
+        background-size: contain
+//Меню с категориями
+.menu
+    &-categories
+        margin-bottom: 200px
+        &__container
+            min-height: 744px
+            background: url(../img/index/menu-bg.png) no-repeat center
+            background-size: cover
+            display: flex
+            align-items: center
+.categories
+    &-nav
+        margin-left: 20%
+        &__item
+            margin-bottom: 25px
+            list-style-type: none
+            transition-duration: 0.7s
+            &:last-child
+                margin-bottom: 0
+            &:hover
+                transform: translateX(10px)
+        &__link
+            font-family: 'Pribambas', sans-serif
+            font-size: 40px
+            
+           
+
+    
+    //Доставка и оплата
+.delivery
+    &-list
+        max-width: 350px
+        list-style-position: outside
+    &-block
+        +flex
+        align-items: center
+        &__bg
+            margin-top: -120px
+//Сссылки на страницы
+.pages
+    &-block
+        background: url(../img/index/star-pay.svg) no-repeat center left 70px
+        background-size: contain
+        +flex
+        align-items: center
+        &__item
+            width: 33,3%
+            margin-right: 5px
+        &__desc
+            max-width: 345px
+            margin-bottom: 30px
+        &__link
+            margin-right: 8px
+
+
+
+//@media screen and ( max-width:  1200px)
+
+@media screen and ( max-width:990px ) 
+   
+    .categories
+        &-block
+            margin-bottom: 35px
+            &_small
+                display: flex
+                justify-content: space-between
+                flex-direction: row
+                width: 100%
+                &-item
+                    margin-right: 20px
+            &_big
+                margin-right: 0px
+    .category
+        &-link
+            margin-right: 0px
+        &-block
+            &__img
+                width: 100%
+                height: auto
+                &_big
+                    heig: auto
+                &_small
+                    max-height: none
+                    height: auto
+    .section
+        margin-bottom: 110px
+        &-title
+            font-size: 55px
+        &-pay
+            background: url(../img/index/star-pay.svg) no-repeat center left 80%
+            background-size: contain
+    .top
+        &-container
+            margin-bottom: 110px
+    .delivery
+        &-block
+            &__bg
+                display: none
+    .star-bg_bottom
+        display: none
+    .pages
+        &-block
+            align-items: flex-start
+            flex-wrap: wrap
+            &__item
+                margin-right: 15px
+                margin-bottom: 35px
+            &__bg
+                display: none
+            &__desc
+                margin-bottom: 20px
+    .hide_990
+        display: none
+@media screen and ( max-width: 768px )
+    .header
+        &-nav
+            &__list
+                display: none
+    .burger
+        display: block
+@media screen and ( max-width: 640px ) 
+    .swiper-pagination
+        display: none
+    .product-slider__arrow_left
+        display: none
+    .product-slider__arrow_right
+        display: none
+    .top
+        &-container
+            margin-bottom: 70px
+    .section
+        margin-bottom: 70px
+        &-title
+          font-size: 32px
+          margin-bottom: 40px
+    .title
+        &_40
+            font-size: 32px
+            max-width: 100%
+    .menu
+        &-categories
+            margin-bottom: 70px
+            &__container
+                background: $nav
+                min-height: 300px
+                justify-content: center
+    .categories
+        &-nav
+            margin-left: 0
+            &__link
+                font-size: 32px
+    .list
+        list-style-position: inside
+        &__item
+            font-size: 18px                      
+    .category
+        &-info
+            &__name
+                font-size: 18px    
+@media screen and ( max-width: 486px )
+    .categories-block_small
+        flex-direction: column
+        &-item
+            margin-right: 0
+    .section
+        margin-bottom: 48px
+        &-title
+            font-size: 24px
+    .category-info__name
+        font-size: 16px
+    .categories-nav__link
+        font-size: 24px
+    .pages-block 
+        background: url(../img/index/star-pay.svg) no-repeat center left -7px
+        background-size: contain
+    .list__item
+        font-size: 16px
+    .title_40
+        font-size: 24px

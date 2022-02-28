@@ -1,0 +1,77 @@
+.contacts
+    padding-top: 60px
+    min-height: 60vh
+    background: url(../img/contacts/contacts-bg.jpg) no-repeat center top -38px
+    background-size: cover
+    margin-top: -60px
+    margin-bottom: -240px
+    &-wrap
+        display: flex
+        justify-content: space-between
+    &-block
+        display: flex
+    &-links
+        flex-direction: column
+    &-icons
+        display: flex
+
+    &-info
+        display: flex
+        justify-content: space-between
+    &-title
+        margin-bottom: 30px
+    &-text
+        margin-bottom: 15px
+        width: 300px
+    &-icon
+        margin-right: 15px
+@media screen and ( max-width:  1220px)
+    .contacts
+        &-links
+        &-title
+            max-width: 300px
+            line-height: 135%
+@media screen and ( max-width:  990px)
+    .contacts
+        margin-bottom: -150px
+        min-height: 80vh
+        &-wrap
+            flex-direction: column
+        &-links
+            margin-bottom: 70px
+        &-title
+            margin-bottom: 25px
+@media screen and ( max-width:  640px)
+    .contacts
+        background: url(../img/contacts/contacts-bg.jpg) no-repeat center top 0px
+        background-size: cover
+        padding-bottom: 50px
+        margin-top: -40px
+        margin-bottom: -50px
+        min-height: unset
+        height: auto
+        &-icon
+            margin-right: 24px
+        &-info
+            flex-direction: column
+            &__item
+                &:not(:last-child)
+                    margin-bottom: 20px
+        &-title
+            margin-bottom: 15px
+        &-links
+            margin-bottom: 50px
+                    
+@media screen and ( max-width:  486px)
+    .contacts
+        &-icon
+            margin-right: 24px
+        &-info
+            flex-direction: column
+            &__item
+                &:not(:last-child)
+                    margin-bottom: 15px
+        &-title
+            margin-bottom: 15px
+        &-links
+            margin-bottom: 30px

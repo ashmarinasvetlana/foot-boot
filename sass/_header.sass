@@ -1,0 +1,72 @@
+.header
+    background-color: $nav
+    margin-bottom: 60px
+    padding-top: 20px
+    padding-bottom: 20px
+    &-logo
+        margin-right: 40px
+        width: 64px
+        height: 69px
+    &-container
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-block
+        display: flex
+        align-items: center
+    &-nav
+        display: flex
+        align-items: center
+        &__list
+            display: flex
+        &__item
+            list-style-type: none
+            margin-right: 30px
+    &-info
+        &__item
+            margin-left: 30px
+.burger
+    display: none
+.mobile
+    &-menu
+        &__list
+            margin-top: 50px
+            margin-bottom: 70px
+        &__item
+            margin-bottom: 20px
+        &-link
+            font-size: 32px
+        &_close
+            font-size: 32px
+            text-align: right
+
+@media (max-width: 486px)
+    .mobile
+        &-menu
+            padding-left: 32px
+            padding-top: 74px
+            padding-right: 16px
+            width: 50%
+            height: 100vh
+            background: #FFFFFF
+            z-index: 999
+            position: fixed
+            top: 0
+            left: -100vw
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            transition-duration: 1s
+            &-active
+                left: 0
+    .header
+        margin-bottom: 40px
+        &-logo
+            display: none
+    .slider-nav
+        flex-direction: column
+    .slider-controls
+        width: 100%
+    .slider-arrows
+        width: 100%
+        margin-bottom: 35px
